@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sample Code Box</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/classic/theme-classic/resources/theme-classic-all.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/ext-all.js"></script>
+    <script type="text/javascript">
+        Ext.onReady(function() {
+            var button = Ext.create('Ext.Button', {
+                renderTo: Ext.getElementById('helloDiv'),
+                text: 'My Button',
+                listeners: {
+                    click: function(button) {
+                        Ext.MessageBox.alert('Alert box', 'My custom event is called');
+                    }
+                }
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <div id="helloDiv">
+
+    </div>
+</body>
+
+</html>
